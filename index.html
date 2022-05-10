@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Booki</title>
-	<meta charset="utf-8">	
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="fr">
 
+<head>
+    <title>Booki</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!--logo-->
+        <img src="img/Booki3.png" alt="logo de booki" class="logo">
+        <!--lien nav-->
+        <nav>
+            <a href="#" class="nav">Hébergements</a>
+            <a href="#" class="nav">Activités</a>
+        </nav>
+
+
+    </header>
+    <section class="section_top">
+        <!--intro-->
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+
+        <!--search-->
+        <form method="post" class="search">
+            <label for="search" class="searchLogo"><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" placeholder="Marseille, France" maxlength="255" required id="search" class="searchTxt">
+            <input type="submit" value="Rechercher" class="searchButton">
+        </form>
+
+        <!--Filtres-->
+        <div id="filter">
+            <p>Filtres</p>
+            <a href="#"><i class="fas fa-money-bill-wave"></i><span>Économique</span></a>
+            <a href="#"><i class="fas fa-child"></i><span>Familial</span></a>
+            <a href="#"><i class="fas fa-heart"></i><span>Romantique</span></a>
+            <a href="#"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
+        </div>
+    </section>
 </body>
+
 </html>
