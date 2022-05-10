@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway-Regular.ttf);
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.br_green {
+    border: 1px solid green;
+}
+
+.br_red {
+    border: 1px solid red;
+}
+
+.br_blue {
+    border: 1px solid blue;
+}
+
+.section_top,
+header {
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*header*/
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+/*navigation*/
+    nav {
+        padding-top: 22px;
+        margin: 10px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .nav {
+        padding: 15px;
+        padding-top: 30px;
+        color: black;
+        border-top: 3px solid white;
+    }
+
+    .nav:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+
+/*logo*/
+    .logo {
+        margin-left: 20px;
+        width: 100px;
+    }
+
+/*texte intro*/
+    h2 {
+        font-weight: bold;
+    }
+
+/*search*/
+    .search {
+        border: #F2F2F2 2px solid;
+        border-radius: 10px;
+        width: fit-content;
+        height: 50px;
+        display: flex;
+        background-color: #F2F2F2;
+    }
+
+    .searchLogo {
+        margin: 10px;
+        justify-content: center;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+
+    .searchButton {
+        background-color: #0065FC;
+        border: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+        width: 120px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: large;
+        margin: 0;
+    }
+
+    .searchButton:hover {
+        background-color: #004CBD;
+    }
+
+    .searchTxt {
+        border: none;
+        margin: 0;
+    }
+
+/*filtres*/
+    /*all div*/
+        #filter {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            overflow: visible;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow: visible;
+        }
+
+    /* section title*/
+        #filter p {
+            font-weight: bolder;
+
+    }
+
+    /*all link*/
+        #filter a {
+            padding-right: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            border: 2px solid #F2F2F2;
+            border-left: none;
+            border-radius: 50px;
+            width: auto;
+            font-weight: bold;
+            color: black;
+        }
+
+    /* filter icons*/
+        #filter a i {
+            justify-content: center;
+            align-items: baseline;
+            margin: 0;
+            background-color: #DEEBFF;
+            height: 50px;
+            width: 50px;
+            padding: 15px;
+            border-radius: 50px;
+            color: #0065FC;
+        }
+
+    /*filter animation*/
+        #filter a:hover {
+            background-color: #F2F2F2;
+        }
