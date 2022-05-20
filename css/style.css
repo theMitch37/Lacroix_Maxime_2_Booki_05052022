@@ -58,7 +58,7 @@ header, .footer {
     }
 
     .nav:hover {
-        border-top: 3px solid #0065FC;
+        border-top: 10px solid #0065FC;
         color: #0065FC;
     }
 
@@ -103,6 +103,10 @@ header, .footer {
         font-size: large;
         margin: 0;
     }
+    .searchButton_loupe
+    {
+        display: none;
+    }
 
     .searchButton:hover {
         background-color: #004CBD;
@@ -142,7 +146,6 @@ header, .footer {
             border: 2px solid #F2F2F2;
             border-left: none;
             border-radius: 50px;
-            width: auto;
             font-weight: bold;
             color: black;
             margin-left: 20px;
@@ -170,6 +173,11 @@ header, .footer {
 
 
 /*main*/
+
+        /*price*/
+        .price{
+            font-weight: bold;
+        }
     /*resultat recherche*/
         #resultNumber{
             display: flex;
@@ -195,6 +203,7 @@ header, .footer {
     /*all rent section*/
     .rentSearch{
         display: flex;
+        padding: 20px;
     }
 
     /*all section*/
@@ -217,17 +226,14 @@ header, .footer {
         /*one section*/
         .rent{
             display: block;
-            justify-content: space-between;
             height: 200px;
             background-color: white;
-            width: 240px;
+            width: 220px;
             border-radius: 20px;
             box-shadow: 11px 13px 42px -9px rgba(0,0,0,0.32);
             padding:7px;
-            margin-bottom: 20px;
-
+            margin: 10px;
         }
-
 
         .rent:hover{
             box-shadow: 11px 13px 42px -9px rgba(0,0,0,0.54);
@@ -282,14 +288,14 @@ header, .footer {
         .showMore:hover{
             text-decoration: underline;
         }
-        /*most popular*/
+    /*most popular*/
         /*most popular section*/
         .popular{
             width: 35%;
             background-color: #F2F2F2;
             border-radius: 20px;
             margin-left: 40px;
-            padding: 20px;
+            padding: 22px;
             
         }
 
@@ -308,12 +314,11 @@ header, .footer {
         .rentPop{
             box-shadow: 11px 13px 42px -9px rgba(0,0,0,0.32);
             height: 150px;
-            width: 100%;
             background-color: white;
             border-radius: 20px;
             display: flex;
             padding: 3px;
-            margin-bottom: 20px;
+            margin: 20px;
         }
 
         .rentPop:hover{
@@ -326,7 +331,7 @@ header, .footer {
 
         /*img popular rent*/
         .popImg{
-            width: 150px;
+            width: 250px;
             height: 100%;
             object-fit:cover;
             border-top-left-radius: 20px;
@@ -349,12 +354,13 @@ header, .footer {
         /*activity*/
         /*large activity section*/
         .activityCard{
-            padding-right: 30px;
+            padding: 30px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
         .activityLarge{
+            margin-right: 10px;
             width: 25%;
             border-radius: 20px;
             box-shadow: 11px 13px 42px -9px rgba(0,0,0,0.32);
@@ -417,6 +423,7 @@ header, .footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding-right: 300px;
         }
 
         .footer a:hover{
@@ -426,3 +433,274 @@ header, .footer {
             display: flex;
             flex-direction: column;
         }
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+    /*filter*/
+    #filter{
+        width: 100%;
+    }
+
+    /*main*/
+    main{
+        padding: 0;
+    }
+    /*align top section*/
+    .section_top{
+        padding: 10px;
+    }
+    #resultNumber{
+        margin-left: 20px;
+    }
+
+    /*all rent*/
+    #hebergement{
+        margin-left: 15px;
+    }
+    .rentSearch{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .rentSection{
+        width: 100%;
+        margin-top: 10px;
+        background-color: white;
+    }
+    .rent{
+        width: 100%;
+        height: 350px;
+    }
+    .rentSection img{
+        height: 200px;
+    }
+    .rentContent{
+        font-size: x-large;
+    }
+    .rentScore{
+        padding-top: 20px;
+    }
+
+    /*popular rent*/
+    .popTitle{
+        margin-left: 22px;
+        justify-content: space-between;
+        width: 94%;
+    }
+    .rentPop{
+        font-size: x-large;
+    }
+    .popular{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .popScore{
+        padding-top: 10px;
+    }
+    .popImg{
+        width: 450px;
+    }
+    /*all activity*/
+
+    #activite{
+        padding-left: 30px;
+    }
+    .activityCard{
+        flex-direction: column;
+    }
+    .activityLarge, .activitySmall{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .activiteImgLarge{
+        height: 200px;
+    }
+    /*footer*/
+    .footer{
+        padding: 0;
+        justify-content: space-between;
+    }
+
+}    
+
+
+@media screen and (max-width:767px) {
+
+    /*show search icon*/
+    .searchButton_texte {
+        display: none;
+    }
+    .searchButton_loupe
+    {
+        display: block;
+    }
+    
+    /*header*/
+    header{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .logo{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+    .nav{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-bottom: #F2F2F2 solid 2px;
+        width: 50%;
+    }
+
+    .nav:hover{
+        border-bottom: solid 2px #0065FC;
+        border-top: none;
+    }
+
+    /*search*/
+    .search{
+        background-color: white;
+        border: 2px solid  #F2F2F2;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .searchTxt{
+        width: 250px;
+    }
+    .searchLogo{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 50px;
+        background-color: #F2F2F2;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .searchButton_loupe{
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    /*filter*/
+    #filter{
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+
+    #filter p{
+        width: 100%;
+    }
+    #filter a{
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    /*search result*/
+    #resultNumber{
+        margin-left: 20px;
+    }
+    #resultNumber i{
+        margin-right: 10px;
+        
+    }
+    /*main*/
+    main{
+        padding: 0;
+    }
+    /*align top section*/
+    .section_top{
+        padding: 10px;
+        padding-top: 0;
+    }
+    #resultNumber{
+        margin-left: 10px;
+    }
+
+    /*all rent*/
+    #hebergement{
+        margin-left: 15px;
+    }
+    .rentSearch{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .rentSection{
+        width: 100%;
+        padding: 0;
+        background-color: white;
+    }
+    .rent{
+        width: 100%;
+        height: 280px;
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    .rentSection img{
+        height: 130px;
+    }
+    .rentContent{
+        font-size: x-large;
+    }
+    .rentScore{
+        padding-top: 20px;
+    }
+
+    /*popular rent*/
+    .popTitle{
+        margin-left: 22px;
+        margin-right: 22px;
+        justify-content: space-between;
+    }
+    .rentPop{
+        font-size: x-large;
+    }
+    .popular{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .popContent{
+        font-size: medium;
+    }
+    .popScore{
+        padding-top: 30px;
+    }
+    /*all activity*/
+
+    #activite{
+        padding-left: 30px;
+    }
+    .activityCard{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .activityLarge, .activitySmall{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .activiteImgLarge, .activiteImgSmall{
+        height: 150px;
+    }
+    /*footer*/
+    .footer{
+        padding: 0;
+        flex-direction: column;
+    }
+    .footerLink{
+        margin-bottom: 10px;
+    }
+
+}
