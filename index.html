@@ -4,11 +4,15 @@
 <head>
     <title>Booki</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +21,8 @@
         <img src="img/Booki3.png" alt="logo de booki" class="logo">
         <!--lien nav-->
         <nav>
-            <a href="#" class="nav">Hébergements</a>
-            <a href="#" class="nav">Activités</a>
+            <a href="#hebergement" class="nav">Hébergements</a>
+            <a href="#activite" class="nav">Activités</a>
         </nav>
 
 
@@ -31,10 +35,11 @@
 
             <!--search-->
             <form method="post" class="search">
-                <label for="search" class="searchLogo"><i class="fas fa-map-marker-alt"></i></label>
+                <label for="search" class="searchLogo"><i class="fas fa-map-marker-alt searchIcon"></i></label>
                 <input type="text" placeholder="Marseille, France" maxlength="255" required id="search"
                     class="searchTxt">
-                <input type="submit" value="Rechercher" class="searchButton">
+                <button type="submit" class="searchButton searchButton_texte">Rechercher</button>
+                <button type="submit" class="searchButton searchButton_loupe"><i class="fas fa-search"></i></button>
             </form>
 
             <!--Filtres-->
@@ -43,7 +48,7 @@
                 <a href="#"><i class="fas fa-money-bill-wave"></i><span>Économique</span></a>
                 <a href="#"><i class="fas fa-child"></i><span>Familial</span></a>
                 <a href="#"><i class="fas fa-heart"></i><span>Romantique</span></a>
-                <a href="#"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
+                <a href="#" class="filterLink"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
             </div>
         </section>
 
@@ -57,7 +62,7 @@
         <!--hebergement-->
         <div class="rentSearch">
             <section class="rentSection">
-                <h2>Hébergements à Marseille</h2>
+                <h2 id="hebergement">Hébergements à Marseille</h2>
 
                 <a href="#" class="rent">
                     <img src="img/hebergement/cannebiereSmall.jpg" alt="Auberge la cannebière">
@@ -207,10 +212,10 @@
                 </a>
             </aside>
         </div>
-        
+
         <!--Activités-->
         <section class="activity">
-            <h2>Activités à Marseille</h2>
+            <h2 id="activite">Activités à Marseille</h2>
 
             <div class="activityCard">
 
