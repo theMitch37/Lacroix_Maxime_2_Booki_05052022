@@ -3,7 +3,7 @@
     ---CONTEXTE---
 
     Dans le cadre de la formation prep'apprentissage créée par Openclasseroom, j'ai dû réaliser une mise en situation professionnelle.
-    Embauché par une société fictive du nom de "Booki",qui egroupe des offres d'hébergement et des activités pour les vacances, j'ai dû réaliser, grâce aux maquettes fournies, toute la structure de base du site.
+    Embauché par une société fictive du nom de "Booki",qui regroupe des offres d'hébergement et des activités pour les vacances, j'ai dû réaliser, grâce aux maquettes fournies, toute la structure de base du site.
     J'ai réalisé ce projet en feature branching grâce à gitHub et gitKraken en desktop first puis j'ai réalisé le responsive pour tablette pour finir sur le responsive sur téléphone.
 
     ---CONTRAINTE---

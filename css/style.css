@@ -80,7 +80,6 @@ h1 {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
-    width: 120px;
     padding: 10px;
     font-weight: bold;
     font-size: large;
@@ -232,7 +231,7 @@ h1 {
 }
 
 .rentContent {
-    height: 80px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,7 +308,7 @@ h1 {
 /*one rent popular*/
 .rentPop {
     box-shadow: 11px 13px 42px -9px rgba(0, 0, 0, 0.32);
-    height: 150px;
+    height: 160px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -340,11 +339,14 @@ h1 {
 .popContent {
     margin: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .popScore {
-    padding-top: 50px;
+
     color: #0065FC;
 }
 
